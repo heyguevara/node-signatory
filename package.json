@@ -7,5 +7,9 @@
     "test": "mocha test"
   },
   "author": "Richard Marr <richard.marr@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/riskpenguin/node-signatory.git"
+  }
 }
