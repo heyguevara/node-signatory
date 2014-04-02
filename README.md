@@ -1,5 +1,6 @@
 ## node-signatory
 
+[![Build Status](https://secure.travis-ci.org/riskpenguin/node-signatory.png)](http://travis-ci.org/riskpenguin/node-signatory)
 Node implementation of the API request signing algorithm used at Guevara
 
 ###Example:
@@ -16,7 +17,7 @@ Node implementation of the API request signing algorithm used at Guevara
 			params : req.body,
 			
 			// params that you don't want to use as part of the signature, e.g. the client signature to verify, cache-busting timestamps, etc.
-			ignored : ['sig','']	
+			ignored : ['sig','_']	
 		});
 		
 		if ( serverSignature != clientSignature ) ... report the problem
