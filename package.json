@@ -11,5 +11,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/riskpenguin/node-signatory.git"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1"
   }
 }
