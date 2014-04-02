@@ -1,6 +1,7 @@
 ## node-signatory
 
 [![Build Status](https://secure.travis-ci.org/riskpenguin/node-signatory.png)](http://travis-ci.org/riskpenguin/node-signatory)
+
 Node implementation of the API request signing algorithm used at Guevara
 
 ###Example:
