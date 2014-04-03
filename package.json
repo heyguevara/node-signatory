@@ -1,6 +1,6 @@
 {
   "name": "signatory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generates a signature for a specified set of request parameters. Useful for APIs that require verification of authenticity but don't want to require sessions or similar",
   "main": "index.js",
   "scripts": {
