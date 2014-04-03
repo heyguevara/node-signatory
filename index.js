@@ -9,7 +9,7 @@ exports.signature = function( options ){
 		path:"",
 		separator:"|",
 		params:{},
-		ignoredParams:[]
+		ignored:[]
 	};
 	for ( var prop in options ) config[prop] = options[prop];
 	
@@ -17,7 +17,7 @@ exports.signature = function( options ){
 	// 1. Create an array of pair objects, e.g. [{key:'a',value:'b'}] excluding ignored parameters
 	var fields = [];
 	for ( var key in options.params ){
-		if ( config.ignoredParams.indexOf(key) == -1 ){
+		if ( config.ignored.indexOf(key) == -1 ){
 			fields.push({ key:key, value:options.params[key] });
 		}
 	}
@@ -30,6 +30,7 @@ exports.signature = function( options ){
 	
 	// 4. Now add the system secret, path and the user secret
 	var stringToSign = config.secret + "|" + config.path + "|" + fields;
+	console.log(stringToSign)
 	return hash( stringToSign, 'sha1' );
 };
 

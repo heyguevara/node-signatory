@@ -8,9 +8,10 @@ describe('signatory', function(){
 		var signature = signatory.signature({
 			secret:"my secret",
 			path:"/my/path",
-			params: { id:7, _redHerring:"something", _:"" }
+			params: { id:7, _redHerring:"something", _:"1234567890", foo:"bar" },
+			ignored : [ "_", "foo" ]
 		});
-		assert.strictEqual( signature, "471a05a313814f9a869066ffc4659d823e8eda51" );
+		assert.strictEqual( signature, "2ea33741024a409849859ae16436d944c11e1c89" );
 		done();
 	});
 	
